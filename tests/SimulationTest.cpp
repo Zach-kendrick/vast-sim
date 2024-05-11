@@ -79,3 +79,9 @@ TEST_F(SimulationTest, RunSimulation_1_2) {
     EXPECT_EQ(trucks[0]->getTotalUnloads(), 5);
     EXPECT_EQ(trucks[0]->getAverageWaitTime(), 1);
 }
+
+// TODO: The tests are obviously incomplete. With more time, I would add tests to handle the following cases:
+// (1) The user passes in 0 or negative values for the number of trucks/stations - this wasn't addressed in the code.
+// (2) A test case for a mining time that is longer than the simulation run time.
+// (3) A test case with a lot of trucks and one stations and vice versa.
+// (4) A test case with with a ton of trucks and stations.
